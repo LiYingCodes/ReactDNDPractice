@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { observe } from './Game';
+import Board from './Board'
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        Hello
-      </div>
-    )
-  }
-}
-
-ReactDOM.render(<App />, document.getElementById('app'));
+observe(knightPosition =>
+  ReactDOM.render(
+    <Board knightPosition={knightPosition} />,
+    document.getElementById("app")
+  )
+);
