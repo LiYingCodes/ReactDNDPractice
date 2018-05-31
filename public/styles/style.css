@@ -132,8 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 .app {
-  height: 100vh;
-  background: red; }
+  height: 100vh; }
 
 .squares {
   width: 12.5%;
